@@ -146,6 +146,7 @@
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(6, 204);
             this.button2.Name = "button2";
@@ -153,6 +154,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Login";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox2
             // 
@@ -168,7 +170,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(16, 128);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(217, 60);
+            this.label4.Size = new System.Drawing.Size(211, 59);
             this.label4.TabIndex = 2;
             this.label4.Text = "Password:";
             // 
@@ -187,7 +189,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(6, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 60);
+            this.label3.Size = new System.Drawing.Size(224, 59);
             this.label3.TabIndex = 0;
             this.label3.Text = "Username:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
