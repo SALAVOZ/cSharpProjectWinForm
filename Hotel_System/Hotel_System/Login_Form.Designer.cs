@@ -38,10 +38,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -131,10 +131,10 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.buttonLogin);
+            this.groupBox2.Controls.Add(this.textBoxPassword);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.textBoxUsername);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox2.Location = new System.Drawing.Point(12, 293);
@@ -144,23 +144,24 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
-            // button2
+            // buttonLogin
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(6, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(696, 86);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Login";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonLogin.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonLogin.Location = new System.Drawing.Point(6, 204);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(696, 86);
+            this.buttonLogin.TabIndex = 4;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // textBox2
+            // textBoxPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(235, 136);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(467, 51);
-            this.textBox2.TabIndex = 3;
+            this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxPassword.Location = new System.Drawing.Point(235, 136);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(467, 51);
+            this.textBoxPassword.TabIndex = 3;
             // 
             // label4
             // 
@@ -168,18 +169,18 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(16, 128);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(217, 60);
+            this.label4.Size = new System.Drawing.Size(211, 59);
             this.label4.TabIndex = 2;
             this.label4.Text = "Password:";
             // 
-            // textBox1
+            // textBoxUsername
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(235, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(467, 51);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxUsername.Location = new System.Drawing.Point(235, 40);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(467, 51);
+            this.textBoxUsername.TabIndex = 1;
+            this.textBoxUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -187,7 +188,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(6, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 60);
+            this.label3.Size = new System.Drawing.Size(224, 59);
             this.label3.TabIndex = 0;
             this.label3.Text = "Username:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -222,10 +223,10 @@
         private Panel panel2;
         private Label label2;
         private GroupBox groupBox2;
-        private TextBox textBox1;
+        private TextBox textBoxUsername;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox textBoxPassword;
         private Label label4;
-        private Button button2;
+        private Button buttonLogin;
     }
 }

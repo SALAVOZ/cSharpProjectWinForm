@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "xssuxU/xWnAznzIJqNAbC2TFTYqFjjFA0EUJNFloNuallhBDMrNBK8ulktGigs5NREfv4OjEn6EJ4XF2GP5PQg==",
+  "dgSpecHash": "W9ioso8+a0pbFJYYeQ3hD9QrWVcbLivGB6CTHHIjsAQRme2W50fyVcFWEezHft7iWixW5NgHrtAwlLIHadKgEA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\cSharpProjectWinForm\\Hotel_System\\Hotel_System\\Hotel_System.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Салават\\.nuget\\packages\\npgsql\\6.0.4\\npgsql.6.0.4.nupkg.sha512",
+    "C:\\Users\\Салават\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
