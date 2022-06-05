@@ -51,5 +51,10 @@ namespace Hotel_System
                 }
             }
         }
+
+        private void ManageClientsForm_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = client.getClients();
+        }
     }
 }
