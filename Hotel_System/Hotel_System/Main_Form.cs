@@ -16,5 +16,28 @@ namespace Hotel_System
         {
             InitializeComponent();
         }
+
+        private void Main_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void manageClientsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageClientsForm manageClientsForm = new ManageClientsForm();
+            manageClientsForm.Show();
+        }
+
+        private void manageRoomsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageRoomsForm manageRoomsForm = new ManageRoomsForm();
+            manageRoomsForm.Show();
+        }
+
+        private void manageReservationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageReservationsForm manageReservationsForm = new ManageReservationsForm();
+            manageReservationsForm.Show();
+        }
     }
 }

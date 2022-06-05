@@ -18,3 +18,4 @@ C:\Projects\cSharpProjectWinForm\Hotel_System\Hotel_System\obj\Debug\net6.0-wind
 C:\Projects\cSharpProjectWinForm\Hotel_System\Hotel_System\obj\Debug\net6.0-windows\ref\Hotel_System.dll
 C:\Projects\cSharpProjectWinForm\Hotel_System\Hotel_System\bin\Debug\net6.0-windows\Npgsql.dll
 C:\Projects\cSharpProjectWinForm\Hotel_System\Hotel_System\obj\Debug\net6.0-windows\Hotel_System.csproj.CopyComplete
+C:\Projects\cSharpProjectWinForm\Hotel_System\Hotel_System\obj\Debug\net6.0-windows\Hotel_System.Main_Form.resources

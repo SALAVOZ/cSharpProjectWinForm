@@ -46,12 +46,23 @@ namespace Hotel_System
             if(dt.Rows.Count > 0)
             {
                 this.Hide();
-                Main_From
-                MessageBox.Show("YES");
+                Main_Form main_form = new Main_Form();
+                main_form.Show();
             }
             else
             {
-                MessageBox.Show("NO");
+                if (textBoxUsername.Text.Trim().Equals(""))
+                {
+                    MessageBox.Show("Enter your username", "Empty Username", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (textBoxPassword.Text.Trim().Equals(""))
+                {
+                    MessageBox.Show("Enter your password", "Empty password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("This Username or Password Doesn't exists", "Wrong Data", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
