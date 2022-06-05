@@ -7,5 +7,14 @@
     <Compile Update="Main_Form.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ManageClientsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageReservationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageRoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
