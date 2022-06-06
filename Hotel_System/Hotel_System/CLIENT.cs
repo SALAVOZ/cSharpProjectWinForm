@@ -28,6 +28,49 @@ namespace Hotel_System
                 return false;
             }
         }
+
+        public bool editClient(Int32 Id, String firstName, String lastName, String Phone, String Country)
+        {
+            NpgsqlCommand command = new NpgsqlCommand("UPDATE clients set firstName=@fName, lastName=@lName, phone=@phone, country=@country WHERE id=@cid", conn.getConnection());
+            command.Parameters.Add("@cid", NpgsqlDbType.Integer).Value = Id;
+            command.Parameters.Add("@fName", NpgsqlDbType.Varchar).Value = firstName;
+            command.Parameters.Add("@lName", NpgsqlDbType.Varchar).Value = lastName;
+            command.Parameters.Add("@phone", NpgsqlDbType.Varchar).Value = Phone;
+            command.Parameters.Add("@country", NpgsqlDbType.Varchar).Value = Country;
+
+            conn.openConnection();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                conn.closeConnection();
+                return true;
+            }
+            else
+            {
+                conn.closeConnection();
+                return false;
+            }
+        }
+
+        public bool removeClient(Int32 id)
+        {
+            NpgsqlCommand command = new NpgsqlCommand("DELETE FROM clients WHERE id=@cid", conn.getConnection());
+            command.Parameters.Add("@cid", NpgsqlDbType.Bigint).Value = id;
+
+            conn.openConnection();
+
+            if(command.ExecuteNonQuery() == 1)
+            {
+                conn.closeConnection();
+                return true;
+            }
+            else
+            {
+                conn.closeConnection();
+                return false;
+            }
+        }
+
         public DataTable getClients()
         {
             NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM clients", conn.getConnection());
