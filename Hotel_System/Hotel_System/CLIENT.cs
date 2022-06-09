@@ -82,5 +82,18 @@ namespace Hotel_System
 
             return dataTable;
         }
+
+        public bool isClientExists(Int32 clientId)
+        {
+            NpgsqlCommand command = new NpgsqlCommand("select exists(select id from clients where id=@clientId)", conn.getConnection());
+            command.Parameters.Add("@clientId", NpgsqlDbType.Integer).Value = clientId;
+            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter();
+            DataTable table = new DataTable();
+            adapter.SelectCommand = command;
+
+            conn.openConnection();
+            adapter.Fill(table);
+            return bool.Parse(table.Rows[0][0].ToString());// get command exists result
+        }
     }
 }
